@@ -1,3 +1,5 @@
+import Dictionary from "./Dictionary";
+
 import "./App.css";
 
 export default function App() {
@@ -7,7 +9,10 @@ export default function App() {
         <header className="App-header">
           <h1>Hello World!</h1>
         </header>
-        <footer className="text-center">
+        <main>
+          <Dictionary />
+        </main>
+        <footer>
           Coded by{" "}
           <a
             href="https://github.com/whaleism"
