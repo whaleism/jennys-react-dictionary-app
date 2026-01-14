@@ -1,0 +1,3 @@
+let apiKey = "3f3b4696cb6569teb708ec8264d1ad5o";
+
+let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word={word}&key=${apiKey}`
