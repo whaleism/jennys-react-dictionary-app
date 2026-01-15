@@ -31,11 +31,11 @@ export default function App() {
           </a>
           , hosted by{" "}
           <a
-            href="https://thriving-sunflower-684c9e.netlify.app/"
+            href="https://jennys-react-dictionary-app.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Netlify
+            Vercel
           </a>
         </footer>
       </div>
