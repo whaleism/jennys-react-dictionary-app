@@ -1,3 +1,44 @@
 let apiKey = "3f3b4696cb6569teb708ec8264d1ad5o";
 
 let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word={word}&key=${apiKey}`
+
+https://api.shecodes.io/dictionary/v1/define?word=hobby&key=3f3b4696cb6569teb708ec8264d1ad5o
+
+let dictionaryApi = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
+    /* SheCodes Api */
+    let apiKey = "3f3b4696cb6569teb708ec8264d1ad5o";
+    let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
+    axios.get(apiUrl).then(handleResponse);
+
+<div key={index}>{meaning.definition}</div>
+
+<h3>{props.meaning.partOfSpeech}</h3>
+      <p>{props.meaning.definition}</p>
+      <p>{props.meaning.definition.exa}</p>
+
+/ for phonetic to link to external tab - audio
+
+    let phoneticText = props.phonetic.text || props.phonetic.phonetic;
+
+    return (
+      <div className="Phonetic">
+        <span className="text">{phoneticText}</span>
+        <br />
+
+        {/* Renders the link only if a valid audioUrl exists */}
+        {audioUrl && (
+          <a
+            href={audioUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="audio-link"
+          >
+            Listen
+          </a>
+        )}
+      </div>
+    );
+  } else {
+    return null;
+  }
+}

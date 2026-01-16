@@ -1,8 +1,9 @@
 import React from "react";
 
 export default function Phonetic(props) {
-  console.log(props.phonetic);
+  // console.log(props.phonetic);
   if (props.phonetic) {
+    // conditional rendering
     // Finding objects in the array that contain an audio file and is strictly not a string, it's then saved into the audioData variable
     let audioData = props.phonetic.phonetics.find(
       (audioFile) => audioFile.audio !== ""
@@ -16,23 +17,21 @@ export default function Phonetic(props) {
       audioUrl = null;
     }
 
-    let phoneticText = props.phonetic.text || props.phonetic.phonetic;
+    function playAudio(event) {
+      event.preventDefault();
+      let audio = new Audio(audioUrl);
+      audio.play();
+    }
 
     return (
-      <div className="Phonetic">
-        <span className="text">{phoneticText}</span>
-        <br />
-
-        {/* Renders the link only if a alid audioUrl exists */}
+      <div className="Phonetics">
+        <span className="text">
+          {props.phonetic.text || props.phonetic.phonetic}
+        </span>
         {audioUrl && (
-          <a
-            href={audioUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="audio-link"
-          >
-            Listen
-          </a>
+          <button onClick={playAudio} className="audio-button">
+            <i className="fa-solid fa-volume-high"></i>
+          </button>
         )}
       </div>
     );
