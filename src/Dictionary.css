@@ -1,5 +1,13 @@
 .Dictionary {
   background-color: white;
-  margin: 0 auto;
+  border-radius: 15px;
+  margin: 35px auto;
   max-width: 500px;
+  padding: 20px;
+}
+
+.Dictionary main {
+  background: black;
+  border-radius: 15px;
+  padding: 10px;
 }

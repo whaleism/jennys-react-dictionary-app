@@ -41,6 +41,10 @@ export default function Dictionary() {
 
   return (
     <div className="Dictionary">
+      <main>
+        <h1>Dictionary App</h1>
+        <span className="">Search for a word</span>
+      </main>
       <form onSubmit={search}>
         <input type="search" onChange={handleKeywordChange}></input>
         <input type="submit" value="Search"></input>
