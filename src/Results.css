@@ -1,0 +1,10 @@
+.Results {
+  background-color: #b8c0ff;
+  padding: 50px;
+}
+
+.Results h2 {
+  font-size: 45px;
+  letter-spacing: -3px;
+  line-height: 1;
+}

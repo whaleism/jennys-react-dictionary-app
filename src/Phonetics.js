@@ -1,12 +1,14 @@
 import React from "react";
 
+import "./Phonetics.css";
+
 export default function Phonetic(props) {
   // console.log(props.phonetic);
   if (props.phonetic) {
     // conditional rendering
     // Finding objects in the array that contain an audio file and is strictly not a string, it's then saved into the audioData variable
     let audioData = props.phonetic.phonetics.find(
-      (audioFile) => audioFile.audio !== ""
+      (audioFile) => audioFile.audio !== "",
     );
 
     let audioUrl = null;

@@ -11,7 +11,6 @@ export default function Dictionary() {
 
   function search(event) {
     event.preventDefault();
-    alert(`Searching for ${keyword}`);
 
     function handleResponse(response) {
       // Handles SheCodes Api Data
@@ -41,15 +40,21 @@ export default function Dictionary() {
 
   return (
     <div className="Dictionary">
-      <main>
-        <h1>Dictionary App</h1>
-        <span className="">Search for a word</span>
-      </main>
-      <form onSubmit={search}>
-        <input type="search" onChange={handleKeywordChange}></input>
-        <input type="submit" value="Search"></input>
-      </form>
-      <Results results={results} phonetics={phonetics} />
+      <div className="container">
+        <header>
+          <h1>Dictionary</h1>
+          <span>Search for a word</span>
+        </header>
+        <form onSubmit={search}>
+          <input
+            type="search"
+            onChange={handleKeywordChange}
+            className="search-bar"
+          ></input>
+          <input type="submit" value="Search" className="search-btn"></input>
+        </form>
+        <Results results={results} phonetics={phonetics} />
+      </div>
     </div>
   );
 }

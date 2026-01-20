@@ -1,0 +1,20 @@
+.Phonetics .text {
+  font-size: 13px;
+}
+
+.Phonetics .audio-button {
+  background: none;
+  border: 1px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 13px;
+  margin: 0 0 0 10px;
+  padding: 5px 7px;
+  transition: all 200ms ease-in-out;
+}
+
+.Phonetics .audio-button:hover {
+  background-color: white;
+  border-color: #838ab9;
+  color: #838ab9;
+}

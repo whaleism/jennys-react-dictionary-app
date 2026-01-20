@@ -1,5 +1,5 @@
 body {
-  background-color: #eee;
+  background-color: white;
 }
 
 .App {
@@ -7,6 +7,17 @@ body {
 }
 
 .App footer {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 11px;
   text-align: center;
-  color: grey;
+}
+
+.App footer a {
+  color: #838ab9;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+
+.App footer a:hover {
+  color: #b8c0ff;
 }
